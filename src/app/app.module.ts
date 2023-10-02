@@ -16,6 +16,6 @@ import { AddDeviceUsecase } from './device/application/usecases/add';
     MongooseModule.forFeature([{ name: 'Device', schema: DeviceSchema }])
   ],
   controllers: [DeviceResource],
-  providers: [AddDeviceUsecase, GetDevicesUsecase,DeviceRepository],
+  providers: [{ provide: 'IDeviceRepository', useClass: DeviceRepository },AddDeviceUsecase, GetDevicesUsecase],
 })
 export class AppModule {}
