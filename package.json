@@ -6,11 +6,14 @@
   "scripts": {
     "start": "ts-node  src/app/app.ts",
     "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec ts-node src/app/app.ts",
+    "start:prod": "ts-node  src/app/app.ts",
+    "build": "node_modules/.bin/nest build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nestjs/cli": "^10.2.0",
     "@nestjs/core": "^10.2.6",
     "@nestjs/mongoose": "^10.0.1",
     "@nestjs/platform-express": "^10.2.6",

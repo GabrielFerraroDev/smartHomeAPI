@@ -1,4 +1,4 @@
-import { Schema, Document } from 'mongoose';
+import { Schema } from 'mongoose';
 
 export const DeviceSchema = new Schema({
   id: String,
@@ -6,10 +6,3 @@ export const DeviceSchema = new Schema({
   type: String,
   status: String,
 });
-
-export interface DeviceDocument extends Document {
-  id: string;
-  name: string;
-  type: string;
-  status: string;
-}

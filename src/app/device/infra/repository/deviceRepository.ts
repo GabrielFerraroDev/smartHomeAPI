@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Device } from '../../domain/device.entity';
-import { DeviceDocument } from '../schema/device.schema';
+import { DeviceDocument } from '../schema/device.document';
 import { IDeviceRepository } from '../../application/repository/IDeviceRepository';
 import { MongoDBRepository } from '../../../commons/infra/db/MongoDbRepository';
 

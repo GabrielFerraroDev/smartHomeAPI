@@ -4,11 +4,22 @@ services:
     image: mongo:latest
     container_name: my_mongo_container
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
     ports:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+  
+  myapi:
+    image: myapi:latest
+    container_name: my_api_container
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URI: ${MONGO_URI}
+    depends_on:
+      - mongo
+
 volumes:
   mongo_data:

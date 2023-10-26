@@ -29,8 +29,12 @@ npm install
 ```
 
 ### Set up Environment Variables
-Copy the `.env.example` file to `.env` and fill in the necessary environment variables.
+Copy the `.env.example` file to `.env.development` or `.env.production` and fill in the necessary environment variables.
 
+### Run the Containers
+```bash
+docker-compose up -d
+```
 ### Run the Application
 To run the application in development mode:
 ```bash
@@ -41,3 +45,6 @@ To run the application in production mode:
 ```bash
 npm run start:prod
 ```
+### License
+This project is licensed under the MIT License.
+
