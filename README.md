@@ -1,7 +1,7 @@
 # SmartHomeAPI
 
 ## Description
-SmartHomeAPI is a RESTful API designed to manage smart home devices. Utilizing Hexagonal Architecture, it is built using technologies such as NestJS, MongoDB, TypeScript, and Docker.
+SmartHomeAPI is a RESTful API designed to manage smart home devices. Utilizing Hexagonal Architecture, it is built using technologies such as NestJS, MongoDB, TypeScript,Docker and Kubernets.
 
 ## Features
 - Add new smart home devices
